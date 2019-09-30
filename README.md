@@ -29,12 +29,11 @@ Syntax highlighted code block
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
-```markdown
+```java
 public class Hello{
     public static void main(String[] args){
         System.out.println("hello world);
     }
-    
 }
 
 
