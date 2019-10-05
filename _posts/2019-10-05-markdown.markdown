@@ -8,7 +8,7 @@ tags: [markdown]
 # markdown 笔记
 ---
 记录一些markdown的常用语法，
-# 斜体和粗体
+## 斜体和粗体
 ```
 输入：_斜体_
 ```
@@ -18,8 +18,7 @@ tags: [markdown]
 ```
 输出：粗体
 
----
-# 标题
+## 标题
 
 ```
 输入：
@@ -32,8 +31,7 @@ tags: [markdown]
 #### title2
 ##### title3
 
----
-# 链接
+## 链接
 ```
 输入：[kouyt5](https://www.github.com/kouyt5)
 ```
@@ -46,15 +44,13 @@ tags: [markdown]
 输出：[全局链接][link]
 记得中间至少隔一行
 
----
-# 图片
+## 图片
 ```
 输入：![tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
 ```
 输出：![tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
 
----
-# 引用
+## 引用
 ```
 输入：I read this interesting quote the other day:
 >
@@ -71,8 +67,7 @@ I read this interesting quote the other day:
 
 注意与下一行空行
 
----
-# 列表
+## 列表
 
 ```
 输入：
@@ -90,8 +85,7 @@ I read this interesting quote the other day:
 * pencil
 * phone
 
----
-# 段落
+## 段落
 如何换行？插入两个空格，官方教程是这样说的，说是防止渲染成一行。但实际上直接换行就ok了。
 ```
 输入：

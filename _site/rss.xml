@@ -5,8 +5,8 @@
         <description>Soot Spirits - Abhishek Nagekar</description>
         <link>https://www.nagekar.com</link>
         <atom:link href="https://www.nagekar.com/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Sun, 06 Oct 2019 01:26:52 +0800</lastBuildDate>
-        <pubDate>Sun, 06 Oct 2019 01:26:52 +0800</pubDate>
+        <lastBuildDate>Sun, 06 Oct 2019 01:31:30 +0800</lastBuildDate>
+        <pubDate>Sun, 06 Oct 2019 01:31:30 +0800</pubDate>
         <ttl>60</ttl>
 
 
@@ -45,7 +45,7 @@ It seems that there are some 404 Not Found errors for repositories listed in:
                 <description>&lt;h1 id=&quot;markdown-笔记&quot;&gt;markdown 笔记&lt;/h1&gt;
 &lt;hr /&gt;
 &lt;p&gt;记录一些markdown的常用语法，&lt;/p&gt;
-&lt;h1 id=&quot;斜体和粗体&quot;&gt;斜体和粗体&lt;/h1&gt;
+&lt;h2 id=&quot;斜体和粗体&quot;&gt;斜体和粗体&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;输入：_斜体_
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;em&gt;斜体&lt;/em&gt;&lt;/p&gt;
@@ -53,8 +53,7 @@ It seems that there are some 404 Not Found errors for repositories listed in:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;输出：粗体&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;h1 id=&quot;标题&quot;&gt;标题&lt;/h1&gt;
+&lt;h2 id=&quot;标题&quot;&gt;标题&lt;/h2&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;输入：
 ### title1
@@ -66,8 +65,7 @@ It seems that there are some 404 Not Found errors for repositories listed in:
 &lt;h4 id=&quot;title2&quot;&gt;title2&lt;/h4&gt;
 &lt;h5 id=&quot;title3&quot;&gt;title3&lt;/h5&gt;
 
-&lt;hr /&gt;
-&lt;h1 id=&quot;链接&quot;&gt;链接&lt;/h1&gt;
+&lt;h2 id=&quot;链接&quot;&gt;链接&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;输入：[kouyt5](https://www.github.com/kouyt5)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;a href=&quot;https://www.github.com/kouyt5&quot;&gt;kouyt5&lt;/a&gt;&lt;/p&gt;
@@ -78,14 +76,12 @@ It seems that there are some 404 Not Found errors for repositories listed in:
 &lt;p&gt;输出：&lt;a href=&quot;www.google.com&quot;&gt;全局链接&lt;/a&gt;
 记得中间至少隔一行&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;h1 id=&quot;图片&quot;&gt;图片&lt;/h1&gt;
+&lt;h2 id=&quot;图片&quot;&gt;图片&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;输入：![tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg&quot; alt=&quot;tiger&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;h1 id=&quot;引用&quot;&gt;引用&lt;/h1&gt;
+&lt;h2 id=&quot;引用&quot;&gt;引用&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;输入：I read this interesting quote the other day:
 &amp;gt;
 &amp;gt;&quot;Her eyes had called him and his soul had leaped at the call. To live, to err, to fall, to triumph, to recreate life out of life!&quot;
@@ -103,8 +99,7 @@ I read this interesting quote the other day:&lt;/p&gt;
 
 &lt;p&gt;注意与下一行空行&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;h1 id=&quot;列表&quot;&gt;列表&lt;/h1&gt;
+&lt;h2 id=&quot;列表&quot;&gt;列表&lt;/h2&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;输入：
 * apple
@@ -126,8 +121,7 @@ I read this interesting quote the other day:&lt;/p&gt;
   &lt;li&gt;phone&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
-&lt;h1 id=&quot;段落&quot;&gt;段落&lt;/h1&gt;
+&lt;h2 id=&quot;段落&quot;&gt;段落&lt;/h2&gt;
 &lt;p&gt;如何换行？插入两个空格，官方教程是这样说的，说是防止渲染成一行。但实际上直接换行就ok了。&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;输入：
 I love all the beautiful girl with a kindheart  and considerate heart.  Do you agree with me?
