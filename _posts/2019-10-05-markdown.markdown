@@ -76,6 +76,8 @@ I read this interesting quote the other day:
     * apple2
 * pencil
 * phone
++ chencong
++ baihui
 
 ```
 输出：
@@ -84,6 +86,9 @@ I read this interesting quote the other day:
     * apple2
 * pencil
 * phone
++ chencong
++ baihui
+
 
 ## 段落
 如何换行？插入两个空格，官方教程是这样说的，说是防止渲染成一行。但实际上直接换行就ok了。
