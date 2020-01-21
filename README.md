@@ -1,6 +1,7 @@
-# Soot Spirits Jekyll Theme
+# GitHub Page
+**主题名称：** `Soot Spirits Jekyll Theme` 
 
-see [sootspirits.github.io](https://sootspirits.github.io)
+原始网页详见 [sootspirits.github.io](https://sootspirits.github.io)
 
 # 这是什么？
 
