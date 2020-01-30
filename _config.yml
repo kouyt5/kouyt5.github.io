@@ -1,7 +1,7 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: pretty
-paginate: 1
+paginate: 2
 paginate_path: "/blog/page:num/"
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
