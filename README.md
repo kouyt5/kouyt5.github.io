@@ -1,14 +1,12 @@
 # [TeXt Theme](https://github.com/kitian616/jekyll-TeXt-theme)
 
 [![license](https://img.shields.io/github/license/kitian616/jekyll-TeXt-theme.svg)](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)
-[![Gem Version](https://img.shields.io/gem/v/jekyll-text-theme.svg)](https://github.com/kitian616/jekyll-TeXt-theme/releases)
-[![Travis](https://img.shields.io/travis/kitian616/jekyll-TeXt-theme.svg)](https://travis-ci.org/kitian616/jekyll-TeXt-theme)
 
 ![TeXt Theme](screenshots/TeXt-home.jpg)
 
 ![TeXt Theme Details](screenshots/TeXt-layouts.png)
 
-这个gitPage页面clone自![jekyll-TeXt-theme]((https://github.com/kitian616/jekyll-TeXt-theme)
+这个gitPage页面clone自![jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)
 
 ## 特性
 
@@ -79,8 +77,8 @@ TeXt 使用 [Tomorrow](https://github.com/chriskempson/tomorrow-theme) 作为它
 
 ## 其他资源
 
-在 *_includes/svg/icon/social* 目录下有很多的社交产品图标，例如 Behance、Flickr、QQ、微信等，方便修改和使用。
+在 `_includes/svg/icon/social` 目录下有很多的社交产品图标，例如 Behance、Flickr、QQ、微信等，方便修改和使用。
 
 ## 协议
 
-TeXt Theme 遵循 [MIT 协议](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)。
+TeXt Theme 遵循 ![MIT 协议](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)。
