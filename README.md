@@ -6,7 +6,7 @@
 
 ![TeXt Theme Details](screenshots/TeXt-layouts.png)
 
-这个gitPage页面clone自![jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)
+这个gitPage页面clone自[jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)
 
 ## 特性
 
@@ -81,4 +81,4 @@ TeXt 使用 [Tomorrow](https://github.com/chriskempson/tomorrow-theme) 作为它
 
 ## 协议
 
-TeXt Theme 遵循 ![MIT 协议](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)。
+TeXt Theme 遵循 [MIT 协议](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)。
