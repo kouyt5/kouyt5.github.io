@@ -1,13 +1,17 @@
-# [TeXt Theme](https://github.com/kitian616/jekyll-TeXt-theme)
+# TeXt Theme
 
 [![license](https://img.shields.io/github/license/kitian616/jekyll-TeXt-theme.svg)](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)
 
-![TeXt Theme](screenshots/TeXt-home.jpg)
+
+
+
+这个GitPage Jekyll主题clone自 [jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme) 。整体界面还是比较简洁，支持各种功能例如`LaTex`、图表等。[配置教程](https://tianqi.name/jekyll-TeXt-theme/docs/zh/quick-start)也比较详细。可以满足大部分需求。
+[Jekyll](https://github.com/jekyll/jekyll) 是一个开源的博客静态网站生成器
+>Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites
+
+也就是说你只顾写 `markdown`，**Web** 前端相关的都不用再学了，通过简单的操作就可以在自己的**服务器**上搭建一个自己的网站。不过，更方便的是，GitHub 提供了更人性化的便利，你甚至连服务器都不用买了，只需要把代码托管到 GitHub 上，它就会免费给你构建部署到GitHub服务器上，并且提供免费域名。这个域名就是 `github用户名.github.io` 。
 
 ![TeXt Theme Details](screenshots/TeXt-layouts.png)
-
-这个gitPage页面clone自[jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme)
-
 ## 特性
 
 - 响应式
@@ -47,32 +51,10 @@ TeXt 使用 [Tomorrow](https://github.com/chriskempson/tomorrow-theme) 作为它
 | --- |  --- | --- | --- |  --- |
 | ![Tomorrow](screenshots/highlight_tomorrow.png) | ![Tomorrow Night](screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](screenshots/highlight_tomorrow-night-bright.png) |
 
-## 文档
-
-### 开始
-
-- [快速开始](https://tianqi.name/jekyll-TeXt-theme/docs/zh/quick-start)
-- [从 1.x 升级到 2.x](https://tianqi.name/jekyll-TeXt-theme/docs/zh/update-from-1-to-2)
-
-### 定制
-
-- [配置](https://tianqi.name/jekyll-TeXt-theme/docs/zh/configuration)
-- [导航栏](https://tianqi.name/jekyll-TeXt-theme/docs/zh/navigation)
-- [布局](https://tianqi.name/jekyll-TeXt-theme/docs/zh/layouts)
-- [Logo 和 Favicon](https://tianqi.name/jekyll-TeXt-theme/docs/zh/logo-and-favicon)
-- [作者](https://tianqi.name/jekyll-TeXt-theme/docs/zh/authors)
-- [国际化](https://tianqi.name/jekyll-TeXt-theme/docs/zh/i18n)
-
-### 内容
-
-- [撰写博客](https://tianqi.name/jekyll-TeXt-theme/docs/zh/writing-posts)
-- [附加样式](https://tianqi.name/jekyll-TeXt-theme/docs/zh/additional-styles)
-- [扩展](https://tianqi.name/jekyll-TeXt-theme/docs/zh/extensions)
-- [Markdown 增强](https://tianqi.name/jekyll-TeXt-theme/docs/zh/markdown-enhancements)
 
 ## 示例
 
-我的博客![kouyt5.github.io](http://kouyt5.github.io)
+我的博客 [kouyt5.github.io](http://kouyt5.github.io)
 
 
 ## 其他资源
@@ -81,4 +63,4 @@ TeXt 使用 [Tomorrow](https://github.com/chriskempson/tomorrow-theme) 作为它
 
 ## 协议
 
-TeXt Theme 遵循 [MIT 协议](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE)。
+TeXt Theme 遵循 [MIT 协议](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE) 。
