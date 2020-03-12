@@ -38,3 +38,31 @@ Linux系统环境变量配置文件：
 
 ## gcc 版本管理
 
+### gcc 安装
+添加ppa源：
+```
+$ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+$ sudo apt-get update
+$ sudo apt-get install gcc-5 g++-5
+```
+但是现在输入 `gcc --version` 发现还是以前的版本。因为linux系统有一个包管理工具，默认托管gcc的原因.输入下面命令，将gcc5添加到包管理工具中
+```bash
+$ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50
+```
+选择版本：
+```bash
+$ sudo update-alternatives --config gcc
+```
+有如下输出：
+```
+有 2 个候选项可用于替换 gcc (提供 /usr/bin/gcc)。
+
+  选择       路径            优先级  状态
+------------------------------------------------------------
+  0            /usr/bin/gcc-4.8   100       自动模式
+  1            /usr/bin/gcc-4.8   100       手动模式
+* 2            /usr/bin/gcc-5     50        手动模式
+
+要维持当前值[*]请按<回车键>，或者键入选择的编号：
+```
+选择你的版本即可。
