@@ -1,7 +1,7 @@
 ---
-title: docker
+title: openseq2seq语音识别环境搭建
 date: "2020-2-18 21:26:00 +0800"
-tags: [docker]
+tags: [docker,语音识别]
 ---
 # docker 简介
 `docker` 是一个使用`GO`语言实现的容器，所谓容器，跟虚拟机有点类似，操作系统上运行一个容器相当于运行一个全新的操作系统。但是这个容器并不是完整的操作系统，只有很少量必要的进程，因此`轻量化`是它的特点之一。容器隔离了宿主的进程，所以看起来容器中的进程无法直接影响宿主系统。那为什么要多次一举，直接在宿主上运行程序不行吗？
@@ -56,7 +56,7 @@ bash scripts/run_all_tests.sh
 python run.py --config_file=example_configs/speech2text/jasper-Mini-for-Jetson.py --mode=train_eval --enable_logs --continue_learning
 ```
 完成！
-## nvidia-docker运行失败
+### nvidia-docker运行失败
 最近搭建一个运行在`docker`的语音识别模型，因为需要 GPU 支持，所以需要安装`nvidia-docker` 根据教程(我晕，[教程](https://nvidia.github.io/OpenSeq2Seq/html/installation.html) 过时了，还是 nvidia 官网的，教程是18年的，现在nvidia-docker2 已经 **deprecated** 了。。。)运行如下命令：
 ```bash
 sudo apt-get install nvidia-docker2
