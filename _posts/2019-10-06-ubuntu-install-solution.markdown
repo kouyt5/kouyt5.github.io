@@ -66,3 +66,30 @@ $ sudo update-alternatives --config gcc
 要维持当前值[*]请按<回车键>，或者键入选择的编号：
 ```
 选择你的版本即可。
+
+## nvidia 驱动安装
+### ppa安装
+通过添加ppa源的方式，这种方式最简单，但是发现不能获取到最新的驱动。
+```bash
+
+```
+
+### 官方驱动安装
+到官网找到自己的驱动 https://www.geforce.cn/drivers
+下载到本地后赋予x权限
+```bash
+$ chmod a+x NVIDIA-Linux-x86_64-440.82.run
+```
+因为开着桌面图形界面，必须关掉才能安装驱动。首先查看桌面是否运行：
+```bash
+ps aux | grep X
+```
+发现如下输出：
+```bash
+root     26848 70.0  0.0 299724 52636 tty7     Ssl+ 01:07   0:00 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+```
+通过 `sudo kill -9 26848` 是无法关掉进程的，它会自动重启，因此需要如下命令关掉 `lightdm` 进程:
+```bash
+sudo /etc/init.d/lightdm stop
+```
+现在就可以愉快的安装驱动了。
