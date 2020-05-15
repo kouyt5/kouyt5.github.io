@@ -36,6 +36,11 @@ Linux系统环境变量配置文件：
 + `/etc/bashrc` : 为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取.
 + `~/.bashrc` : 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该该文件被读取。
 
+### 系统启动
++ 在`/etc/init.d` 目录下，包含系统的各种命令，例如`/etc/init.d/networking stop`停止网络服务。
++ 在`/etc/rc.local/`文件中，包含系统启动时运行的脚本，也就是说把脚本写入这个文件系统启动的时候就会执行。
++ service调用`/etc/init.d/`和`/etc/init`下的脚本 eg:`service tomcat status`
++ `/etc/systemd/system`文件夹下放置开机自启动文件，例如tomcat配置文件。使用systemctl管理.`systemctl status tomcat`
 ## gcc 版本管理
 
 ### gcc 安装
@@ -71,7 +76,10 @@ $ sudo update-alternatives --config gcc
 ### ppa安装
 通过添加ppa源的方式，这种方式最简单，但是发现不能获取到最新的驱动。
 ```bash
-
+sudo add-apt-repository ppa:graphics-drivers/ppa      //添加ppa库到系统中
+sudo apt update         //  更新
+ 
+sudo ubuntu-drivers devices // 显示可以安装的nvidia驱动
 ```
 
 ### 官方驱动安装
