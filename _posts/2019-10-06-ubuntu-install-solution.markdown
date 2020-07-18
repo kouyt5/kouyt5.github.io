@@ -101,3 +101,7 @@ root     26848 70.0  0.0 299724 52636 tty7     Ssl+ 01:07   0:00 /usr/lib/xorg/X
 sudo /etc/init.d/lightdm stop
 ```
 现在就可以愉快的安装驱动了。
+
+## 常用命令
+
++ 添加用户到新组后刷新 `newgrp [group]`
