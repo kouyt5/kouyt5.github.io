@@ -1,5 +1,5 @@
 ---
-title: windows SSH代理配置
+title: windows SSH技巧
 date: "2020-12-23 23:30:00 +0800"
 tags: [工具]
 ---
@@ -32,4 +32,40 @@ printf "USERNAME:$(openssl passwd -crypt PASSWORD)\n"
 在这个目录下，使用如下命令，便可以在1080端口开启监听，不需要密码。
 ```
 docker-compose -f docker-compose-cn.yaml up
+```
+# ssh 相关配置
+ssh有一些参数在连接时候可以指定，有两种方式，一种是以命令的方式，另一种是配置文件的方式。为了方便仅仅记录配置文件的方式。在用户根目录的`.ssh/config` , 若没有请新建一个。如果没有其他设置，该文件的内容应该如下：
+```
+Host 211.83.110.70
+  HostName 211.83.110.70
+  Port 22
+  User chenc
+```
+## ssh配置指定私钥
+在配置文件中加入如下命令
+```
+IdentityFile /path/to/you/id_rsa
+```
+最后的文件内容为：
+```
+Host 211.83.110.70
+  HostName 211.83.110.70
+  Port 22
+  User chenc
+  IdentityFile /path/to/you/id_rsa
+```
+## SSH配置代理
+在配置文件中加入如下命令
+```
+ProxyCommand D:\programs\connect.exe -H 211.83.110.70:1080 %h %p
+```
+其中connect.exe文件可以在git的安装文件夹中复制，一般是`C:\Program Files\Git\mingw64\bin`，注意路径最好是没有中文的。
+## SSH防止断开
+在本地配置文件中加入如下命令
+```
+ServerAliveInterval 60
+```
+网上说还可以在**服务端**加一行配置
+```
+ClientAliveInterval 60 # 这里的Client没错
 ```
