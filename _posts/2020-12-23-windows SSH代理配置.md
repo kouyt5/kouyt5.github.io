@@ -1,7 +1,7 @@
 ---
-title: windows SSH技巧
+title: 代理服务器与ssh和git
 date: "2020-12-23 23:30:00 +0800"
-tags: [工具]
+tags: [工具, ssh, 代理服务器, git]
 ---
 
 # 废话
@@ -11,7 +11,9 @@ tags: [工具]
 
 于是乎，开干...
 
-# http代理服务器搭建[refer](https://www.myfreax.com/how-to-install-and-configure-squid-proxy-on-ubuntu-18-04/)
+# http代理服务器搭建
+## squid
+[refer](https://www.myfreax.com/how-to-install-and-configure-squid-proxy-on-ubuntu-18-04/)
 比较好用的代理服务器是squid，docker搭建代码见 https://github.com/kouyt5/all-in-one/tree/master/lonely-app/squid
 在`lonely-app/squid`下运行这个命令就在本地3128端口，开启代理服务器，使用windows或着火狐浏览器即可开启代理。
 ```
@@ -68,4 +70,21 @@ ServerAliveInterval 60
 网上说还可以在**服务端**加一行配置
 ```
 ClientAliveInterval 60 # 这里的Client没错
+```
+# git代理配置
+受限于学校的端口封禁，为git配置学校电脑的代理，就能直接访问服务器了。git代理配置有两种方式，一种是通过命令行的方式，另一种是写入到git的配置文件中。(推荐第二种方式)
+## 命令行配置代理
+给项目配置代理服务器，在项目根目录下：
+```bash
+git config http.proxy http://user:password@ip:1080
+```
+全局配置：
+```bash
+git config --global http.proxy http://user:password@ip:1080
+```
+## 配置文件配置代理
+打开项目的`.git/config`文件，添加如下配置：
+```
+[http]
+    proxy=http://user:password@ip:1080
 ```
