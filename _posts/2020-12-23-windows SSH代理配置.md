@@ -36,6 +36,38 @@ printf "USERNAME:$(openssl passwd -crypt PASSWORD)\n"
 docker-compose -f docker-compose-cn.yaml up
 ```
 # ssh 相关配置
+## ssh key 生成
+在 windows 上生成 `ssh` 密钥，用以连接 github 等的免密登录：
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@qq.com"
+```
+生成的ssh文件在用户根目录的 `.ssh/` 下，对于windows用户来说，这个文件夹在`C:\Users\用户名\`下，然后进入`.ssh`目录，发现有如下两个文件
+```
+id_rsa  # 私钥
+id_rsa.pub  # 公钥
+```
+### ssh免密配置
+ssh默认通过密码登录，但每次都要输入密码实际上很繁琐，并且安全性不够，因此通用的方法是使用RSA公私钥配置ssh，然后在ssh server端禁用密码登录。rsa的原理就是说你把你client的公钥放在服务器，然后请求的时候用私钥加密，由于黑客不知道你的私钥，也就无法对信息进行修改，也就是说你的操作就只能是你做的。服务器知道不可能第三者会冒充你，也就会接收你的连接。
+
+网上有一种很简单的方法，输入如下命令
+```
+ssh-copy-id -i .ssh/id_rsa.pub  username@192.168.1.1
+```
+但是这个方法在windows上找不到命令。另一个稍微复杂一点点的方法是
+
+1. 复制`id_rsa.pub`中的内容
+2. 在服务器上，检查**用户目录**是否有`.ssh/authorized_keys` 文件，没有就自行创建一个
+```
+用户目录指的是 /home/yourname/ 下
+$ls -la # 查看隐藏文件
+```
+3. 将刚刚复制的内容粘贴到`.ssh/authorized_keys`文件中，重启ssh
+```
+$ sudo service sshd restart  # 重启sshd服务
+```
+经过上面操作后，不出意外就可以免密登录啦
+
+## ssh配置指定私钥
 ssh有一些参数在连接时候可以指定，有两种方式，一种是以命令的方式，另一种是配置文件的方式。为了方便仅仅记录配置文件的方式。在用户根目录的`.ssh/config` , 若没有请新建一个。如果没有其他设置，该文件的内容应该如下：
 ```
 Host 211.83.110.70
@@ -43,7 +75,6 @@ Host 211.83.110.70
   Port 22
   User chenc
 ```
-## ssh配置指定私钥
 在配置文件中加入如下命令
 ```
 IdentityFile /path/to/you/id_rsa
