@@ -26,18 +26,18 @@ titles:
 key: page-about
 ---
 
-# 个人简介
 
 作者目前就读于电子科技大学，正在攻读软件工程硕士学位。研究方向为语音识别(Automatic Speech Recognition, ASR)、语种识别(Language Identification, LID)、语音增强(Speech Enhancement, SE)。
+
+
+## 我用过什么技术栈
+
+Android、SpringBoot、Docker，消息队列、深度学习...
 
 ## 学术成果
 
 + Selective Kernel Network with Intermediate Supervision Loss for Monaural Speech Enhancement. [pdf](https://chencx.cn/files/win-ftp/%E8%AE%BA%E6%96%87/se/CT1050.pdf)
 + [1]蓝天,彭川,李森,钱宇欣,陈聪,刘峤.基于RefineNet的端到端语音增强方法[J/OL].自动化学报:1-10[2021-12-06].https://doi.org/10.16383/j.aas.c190433.
-
-## 我用过什么技术栈
-
-Android、SpringBoot、Docker，消息队列、深度学习...
 
 ## 联系我
 
